@@ -8,11 +8,11 @@ alias h='cd'
 alias d='cd ~/Documents'
 alias dp='cd ~/Documents/projects'
 alias dl='cd ~/Downloads'
+alias de='cd ~/Desktop'
 alias v='cd ~/Videos'
 alias p='cd ~/Pictures'
-alias ..='cd ..'
-alias df='cd ~/.dotfiles'
 alias dtf='cd ~/.dotfiles'
+alias ..='cd ..'
 
 #edit rc files
 alias vrc='vim ~/.vimrc'
@@ -23,3 +23,9 @@ alias ga='git add'
 alias gc='git commit -m'
 alias gs='git status'
 alias gp='git push origin master'
+alias gi='git init'
+
+#sudo commands
+alias sud='sudo apt-get update'
+alias sug='sudo apt-get upgrade'
+alias si='sudo apt-get install'
