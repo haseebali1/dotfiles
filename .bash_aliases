@@ -19,6 +19,7 @@ alias ..='cd ..'
 alias vrc='vim ~/.vimrc'
 alias brc='vim ~/.bashrc'
 alias ba='vim ~/.bash_aliases'
+alias ic='vim ~/.config/i3/config'
 
 #git commands
 alias ga='git add'
