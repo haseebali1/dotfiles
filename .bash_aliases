@@ -2,6 +2,7 @@
 alias vpn='/opt/cisco/anyconnect/bin/vpn'
 alias vpnui='/opt/cisco/anyconnect/hin/vpnui'
 alias open='xdg-open'
+alias r='ranger'
 
 # navigation
 alias h='cd'
@@ -17,6 +18,7 @@ alias ..='cd ..'
 #edit rc files
 alias vrc='vim ~/.vimrc'
 alias brc='vim ~/.bashrc'
+alias ba='vim ~/.bash_aliases'
 
 #git commands
 alias ga='git add'
