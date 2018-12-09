@@ -1,3 +1,12 @@
+"####################################"
+"# __     _____ __  __ ____   ____  #"
+"# \ \   / /_ _|  \/  |  _ \ / ___| #"
+"#  \ \ / / | || |\/| | |_) | |     #"
+"#   \ V /  | || |  | |  _ <| |___  #"
+"#    \_/  |___|_|  |_|_| \_\\____| #"
+"#                                  #"
+"####################################"
+
 set number
 set expandtab
 set shiftwidth=4
@@ -43,3 +52,6 @@ let g:ycm_key_list_previous_completion=['<S-K>', '<Up>']
 let g:UltiSnipsExpandTrigger="<Tab>"
 let g:UltiSnipsJumpForwardTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
+
+"for background same as terminal background
+autocmd ColorScheme * highlight! Normal ctermbg=NONE guibg=NONE

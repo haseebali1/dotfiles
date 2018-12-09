@@ -14,6 +14,7 @@ alias v='cd ~/Videos'
 alias p='cd ~/Pictures'
 alias dtf='cd ~/.dotfiles'
 alias ..='cd ..'
+alias hh='ls -a --ignore . --ignore .. -d .??*'
 
 #edit rc files
 alias vrc='vim ~/.vimrc'
