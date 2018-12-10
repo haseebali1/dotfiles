@@ -54,4 +54,7 @@ let g:UltiSnipsJumpForwardTrigger="<Tab>"
 let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 
 "for background same as terminal background
+"for i3-sensible-terminal
 autocmd ColorScheme * highlight! Normal ctermbg=NONE guibg=NONE
+"for st
+"hi Normal ctermbg=NONE 

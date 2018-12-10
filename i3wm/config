@@ -181,12 +181,12 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
 
 
-exec google-chrome
-exec torbrowser-launcher
-exec gnome-terminal
-exec firefox -private
+exec --no-startup-id google-chrome
+exec --no-startup-id torbrowser-launcher
+exec --no-startup-id gnome-terminal
+exec --no-startup-id firefox -private
 exec --no-startup-id nm-applet
-exec feh --bg-scale /home/haseeb/Pictures/zoro-roronoa-wallpaper-hd-1600x900-314143.jpg
+exec --no-startup-id feh --bg-scale /home/haseeb/Pictures/zoro-roronoa-wallpaper-hd-1600x900-314143.jpg
 exec --no-startup-id compton --vsync opengl --backend glx --paint-on-overlay
 
 new_window pixel 0
