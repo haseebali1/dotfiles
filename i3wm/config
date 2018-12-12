@@ -175,6 +175,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+        workspace_buttons no
 }
 
 # Pulse Audio controls
@@ -200,3 +201,6 @@ exec --no-startup-id compton --vsync opengl --backend glx --paint-on-overlay
 
 #no title bar
 new_window pixel 0
+
+#border only for terminal
+for_window [class = "Gnome-terminal"] border pixel 1
