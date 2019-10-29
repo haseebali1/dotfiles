@@ -17,7 +17,7 @@ set autoindent
 :map! jk <esc>
 
 syntax on
-colorscheme onedark 
+"colorscheme onedark 
 
 inoremap {<CR> {<CR><CR>}<UP><TAB>
 
