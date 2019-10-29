@@ -172,7 +172,19 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
+        separator_symbol " < | > "
         status_command i3status
+
+        colors {
+            background #725271
+            statusline #ffffff
+            separator #05dffc
+
+            focused_workspace  #05dffc #05dffc #000000
+            active_workspace   #725271 #725271 #ffffff
+            inactive_workspace   #725271 #725271 #ffffff
+            urgent_workspace   #725271 #725271 #ffffff
+        }
 }
 
 # Pulse Audio controls
