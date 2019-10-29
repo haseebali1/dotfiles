@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+#script to umount a drive or usb
+
+#directories to be ignored by the script to unmount like home, root or boot
+excludes="\(/boot\|/home\|/\|/boot/efi\)$"
+
+tounmount=$(lsblk -lp | grep "t /" | grep -v $excludes | awk '{print $1 " ( " $4 " ) on " $7}' | dmenu -i -p "Which drive to unmount: " | awk '{print $1}')
+
+if [ -z "$tounmount" ];
+then
+    exit 0
+else
+    sudo umount "$tounmount"
+    exit 0
+fi
