@@ -24,14 +24,14 @@ general {
 order += "volume master"
 order += "disk /"
 order += "wireless _first_"
-order += "ethernet _first_"
+#order += "ethernet _first_"
 order += "battery all"
 #order += "load"
 order += "tztime local"
 
 wireless _first_ {
         #format_up = "W: (%quality at %essid)" # %ip"
-        format_up = "📡 %essid" # %ip"
+        format_up = "  %essid" # %ip"
         format_down = "W: down"
 }
 
@@ -43,16 +43,16 @@ ethernet _first_ {
 }
 
 battery all {
-        format = "%status %percentage %remaining"
+        format = "%status %percentage "
         last_full_capacity = "true"
         integer_battery_capacity = "true"
         hide_seconds = "true"
-        status_chr = "🔌"
-        status_bat = "🔋"
+        status_chr = ""
+        status_bat = ""
 }
 
 tztime local {
-        format = "📆 %Y-%m-%d 🕒 %I:%M:%S %p"
+        format = " %Y-%m-%d 🕒 %I:%M %p"
 }
 
 load {
@@ -60,12 +60,12 @@ load {
 }
 
 disk "/" {
-        format = "💾 %avail"
+        format = "  %used / %total"
 }
 
 volume master {
-        format = "🔊 %volume"
-        format_muted = "🔇 muted (%volume)"
+        format = " %volume"
+        format_muted = " muted (%volume)"
         device = "default"
         mixer = "Master"
         mixer_idx = 0

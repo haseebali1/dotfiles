@@ -40,7 +40,7 @@ alias si='sudo apt-get install'
 
 #custom cd
 c() {
-    cd "$1";
+    cd "$@";
     ls;
 }
 alias cd='c'
