@@ -47,8 +47,8 @@ battery all {
         last_full_capacity = "true"
         integer_battery_capacity = "true"
         hide_seconds = "true"
-        status_chr =  
-        status_bat =  
+        status_chr = ""
+        status_bat = "" 
 }
 
 tztime local {
