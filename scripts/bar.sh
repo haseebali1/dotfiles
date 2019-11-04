@@ -36,11 +36,11 @@ memory() {
 }
 
 weather() {
-    curl wttr.in/?format=4
+    curl wttr.in/?format=4 | cut -d ":" -f 2
 }
 
 while :;
 do 
-    xsetroot - name "$(weather) $delim Volume $(volume) $delim $(memory) $delim $(disk) $delim $(wifi) $delim $(battery) $delim $(times)"
+    xsetroot -name "$(weather) $delim Volume $(volume) $delim $(memory) $delim $(disk) $delim $(wifi) $delim $(battery) $delim $(times)"
     sleep 1m
 done
