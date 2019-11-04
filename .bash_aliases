@@ -34,9 +34,9 @@ alias gp='git push origin master'
 alias gi='git init'
 
 #sudo commands
-alias sud='sudo apt-get update'
-alias sug='sudo apt-get upgrade'
-alias si='sudo apt-get install'
+alias sud='sudo apt update'
+alias sug='sudo apt upgrade'
+alias si='sudo apt install'
 
 #custom cd
 c() {
