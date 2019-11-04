@@ -31,10 +31,12 @@ wifi() {
     nmcli -t | grep " connected" | cut -c 22-
 }
 
+memory() {
+    free -h | grep Mem | awk '{print $3}'
+}
 
-echo "$(battery) $delim $(times) $delim $(volume) $delim  $(disk) $delim $(wifi)"
-#while : 
-#do 
-#    echo `pactl list sinks | grep "Volume: f" | cut -d " " -f6` `date +"%a, %b %d, %y | %I:%M %p"` || exit 1
-#    sleep 1m
-#done
+while :;
+do 
+    xsetroot - name "Volume $(volume) $delim $(memory) $delim $(disk) $delim $(wifi) $delim $(battery) $delim $(times)"
+    sleep 1m
+done
