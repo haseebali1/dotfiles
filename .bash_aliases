@@ -17,6 +17,7 @@ alias dtfs='cd ~/.dotfiles/scripts'
 alias ..='cd ..'
 alias hh='ls -a --ignore . --ignore .. -d .??*'
 alias srh='cd /srv/http'
+alias dw='cd ~/dwm'
 
 #edit rc files
 alias vrc='vim ~/.vimrc'
@@ -25,6 +26,7 @@ alias ba='vim ~/.bash_aliases'
 alias ic='vim ~/.config/i3/config'
 alias is='vim ~/.config/i3status/config'
 alias web='touch index.html style.css'
+alias dwc='vim ~/dwm/config.h'
 
 #git commands
 alias ga='git add'
