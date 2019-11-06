@@ -1,5 +1,7 @@
 #!/bin/bash
 
+trap 'update' 5
+
 delim=" < | > "
 
 battery() {
@@ -42,5 +44,5 @@ weather() {
 while :;
 do 
     xsetroot -name "$(weather) $delim Volume $(volume) $delim $(memory) $delim $(disk) $delim $(wifi) $delim $(battery) $delim $(times)"
-    sleep 1m
+    sleep 1m &
 done
