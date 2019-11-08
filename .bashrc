@@ -84,7 +84,8 @@ case "$TERM" in
 xterm*|rxvt*)
     #original PS1 title bar
     #PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
-    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\w\a\]$PS1"
+    #PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\w\a\]$PS1"
+    PS1='\[\033[1;33m\]-> \[\033[01;31m\]\w\[\033[01;37m\]$ '
     ;;
 *)
     ;;
@@ -119,8 +120,8 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+if [ -f ~/.dotfiles/bash/.bash_aliases ]; then
+    . ~/.dotfiles/bash/.bash_aliases
 fi
 
 # enable programmable completion features (you don't need to enable
