@@ -22,7 +22,7 @@ alias dw='cd ~/dwm'
 #edit rc files
 alias vrc='vim ~/.vimrc'
 alias brc='vim ~/.bashrc'
-alias ba='vim ~/.bash_aliases'
+alias ba='vim ~/.dotfiles/.bash_aliases'
 alias ic='vim ~/.config/i3/config'
 alias is='vim ~/.config/i3status/config'
 alias web='touch index.html style.css'
@@ -43,7 +43,7 @@ alias si='sudo apt install'
 #custom cd
 c() {
     cd "$@";
-    ls;
+    ls -la;
 }
 alias cd='c'
 
