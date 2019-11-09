@@ -1,16 +1,15 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 # This script sets the statusbar with the xsetroot command at the end. Have it
 # started by ~/.xinitrc or ~/.xprofile.
 
-# Handle SIGTRAP signals sent by refbar to update the status bar immediately.
-trap 'update' 5
-
 # Set the deliminter character.
 delim=" | "
 
+# Here is the (big) function that outputs the appearance of the statusbar. It
+# can really be broken down into many submodules which I've commented and
+# explained.
 status() { \
-
 
     #volume
     if [[ `pactl list sinks | grep Mute | grep y` ]]; 
@@ -32,7 +31,7 @@ status() { \
 
 	printf "$delim"
 
-	# wifi
+	# Wifi quality percentage and  icon if ethernet is connected.
     printf " $(nmcli -t | grep " connected" | cut -c 22-)"
 
 	printf "$delim"
@@ -41,6 +40,9 @@ status() { \
     if [[ `acpi -b | grep Discharging` ]];
     then
         printf "$(acpi -b | awk '{print " " $4}' | tr ',' ' ' | sed 's/[[:blank:]]*$//')"
+    elif [[ `acpi -b | grep "Not charging"` ]];
+    then
+        printf "$(acpi -b | awk '{print " " $5}' | tr ',' ' ' | sed 's/[[:blank:]]*$//')"
     else
         printf "$(acpi -b | awk '{print " " $4}' | tr ',' ' ' | sed 's/[[:blank:]]*$//')"
     fi
@@ -53,8 +55,6 @@ status() { \
 
 update() { \
 	xsetroot -name "$(status | tr '\n' ' ')" &
-    wait
-
     }
 
 
@@ -64,6 +64,6 @@ while :; do
 	# again. We run sleep in the background and use wait until it finishes,
     # because traps can interrupt wait immediately, but they can't do that
     # with sleep.
-	sleep 1m 
+	sleep 1m &
     wait
 done
