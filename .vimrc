@@ -15,6 +15,9 @@ set tabstop=4
 set autoindent
 set viminfo=
 
+" Splits open at the bottom and right, which is non-retarded, unlike vim defaults.
+   set splitbelow splitright
+
 :map! jk <esc>
 
 syntax on
