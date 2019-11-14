@@ -35,6 +35,14 @@ alias gs='git status'
 alias gp='git push origin master'
 alias gi='git init'
 
+g() {
+    git add .;
+    git commit -m "$@";
+    git push origin master;
+}
+
+alias g='g'
+
 #sudo commands
 alias sud='sudo apt update'
 alias sug='sudo apt upgrade'
@@ -53,3 +61,7 @@ mkd() {
     cd "$1";
 }
 alias mkdir='mkd'
+
+#wifi
+alias wion='nmcli radio wifi on'
+alias wiof='nmcli radio wifi off'
