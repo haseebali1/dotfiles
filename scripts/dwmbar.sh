@@ -21,6 +21,10 @@ status() { \
 
 	printf "$delim"
 
+    printf " $(pacman -Qu | wc -l)"
+
+	printf "$delim"
+
     #ram
     printf " $(free -h | grep Mem | awk '{print $3}')"
 
