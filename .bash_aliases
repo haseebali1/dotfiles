@@ -43,10 +43,13 @@ g() {
 
 alias g='g'
 
-#sudo commands
-alias sud='sudo apt update'
-alias sug='sudo apt upgrade'
-alias si='sudo apt install'
+#pacman commands
+alias spy='sudo pacman -Syu'
+alias sps='sudo pacman -S'
+alias spss='sudo pacman -Ss'
+alias spr='sudo pacman -R'
+alias spo='sudo pacman -Rns $(pacman -Qtdq)'
+
 
 #custom cd
 c() {
