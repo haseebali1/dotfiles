@@ -2,4 +2,4 @@
 
 #pkill -SIGTRAP dwmbar
 #kill "$(pstree -lp | grep -- -dwmbar\([0-9] | sed "s/.*sleep(\([0-9]\+\)).*/\1/")"
-kill $(ps aux | grep "sleep 1m" | grep -v "grep" | awk '{print $2}')
+kill $(ps aux | grep "[s]leep 1m" | awk '{print $2}')
