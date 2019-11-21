@@ -1,7 +1,7 @@
 feh --bg-scale --no-fehbg ~/Pictures/purple_lion.jpg &
 numlockx &
 dunst &
-compton -b --config ~/.config/compton.conf &
+picom -b --config ~/.config/compton.conf &
 dwmbar &
 
 #exec i3
