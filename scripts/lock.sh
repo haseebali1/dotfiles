@@ -11,3 +11,4 @@ convert -blur 0x9 /tmp/locking_screen.png /tmp/screen.png
 #convert -composite /tmp/screen_blur.png ~/Pictures/caution.png -gravity South -geometry -20x1200 /tmp/screen.png
 i3lock -i /tmp/screen.png
 revert
+refbar
