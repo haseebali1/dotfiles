@@ -31,7 +31,7 @@ status() { \
 
 	printf "$delim"
 
-	# Wifi quality percentage and  icon if ethernet is connected.
+	# Wifi
     printf " $(nmcli -t | grep " connected" | cut -c 22-)"
 
 	printf "$delim"
