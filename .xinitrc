@@ -3,6 +3,7 @@ numlockx &
 dunst &
 picom -b --config ~/.config/picom.conf &
 dwmbar &
+sxhkd &
 
 #exec i3
 
