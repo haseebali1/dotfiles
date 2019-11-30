@@ -28,6 +28,7 @@ alias is='vim ~/.config/i3status/config'
 alias web='touch index.html style.css'
 alias dwc='vim ~/dwm/config.h'
 alias ib='vim ~/install/install.sh'
+alias src='vim ~/.config/sxhkd/sxhkdrc'
 
 #git commands
 alias ga='git add'
