@@ -22,6 +22,7 @@ alias dw='cd ~/dwm'
 #edit rc files
 alias vrc='vim ~/.vimrc'
 alias brc='vim ~/.bashrc'
+alias bp='vim ~/.bash_profile'
 alias ba='vim ~/.dotfiles/.bash_aliases'
 alias ic='vim ~/.config/i3/config'
 alias is='vim ~/.config/i3status/config'
