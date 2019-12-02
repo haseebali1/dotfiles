@@ -1,7 +1,10 @@
 #
 # ~/.bash_profile
 #
-export EDITOR="nvim"
+
+export PATH=$PATH:$HOME/.dotfiles/scripts/
+
+export EDITOR="vim"
 export TERMINAL="st"
 export BROWSER="firefox"
 
