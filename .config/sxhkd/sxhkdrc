@@ -1,6 +1,12 @@
 super + Return
     $TERMINAL
 
+super + a
+    automount
+
+super + shift + a
+    unmount
+
 super + b
     $BROWSER
 
@@ -11,7 +17,7 @@ super + d
     dmenu_run
 
 super + shift + e
-    ~/.dotfiles/scripts/./lock.sh
+    lock
 
 super + m
     minecraft-launcher
