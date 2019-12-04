@@ -7,42 +7,6 @@
 "#                                  #"
 "####################################"
 
-" line numbers, and relative to see increasing and decreasing from current
-    " line
-set number relativenumber
-
-"4 space for tab instead of 8
-set expandtab
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
-
-"auto indent next line with same indentation
-set autoindent
-
-"no viminfo file
-set viminfo=
-
-"spell check based on language
-map <F6> :setlocal spell! spelllang=en_us<CR>
-
-" Splits open at the bottom and right, which is non-retarded, unlike vim defaults.
-set splitbelow splitright
-
-"enter normal mode typing jk in insert mode
-:map! jk <esc>
-
-" Disables automatic commenting on newline:
-" not working
-:autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-"autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
-setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-
-syntax on
-"colorscheme onedark
-
-inoremap {<CR> {<CR><CR>}<UP><TAB>
-
 call plug#begin()
 
     "Plug 'ervandew/supertab'
@@ -86,3 +50,40 @@ autocmd ColorScheme * highlight! Normal ctermbg=NONE guibg=NONE
 
 " Update binds when sxhkdrc is updated.
    autocmd BufWritePost *sxhkdrc !pkill -USR1 sxhkd
+
+" line numbers, and relative to see increasing and decreasing from current
+    " line
+set number relativenumber
+
+"4 space for tab instead of 8
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
+
+"auto indent next line with same indentation
+set autoindent
+
+"no viminfo file
+set viminfo=
+
+"spell check based on language
+map <F6> :setlocal spell spelllang=en_us<CR>
+
+" Splits open at the bottom and right, which is non-retarded, unlike vim defaults.
+set splitbelow splitright
+
+"enter normal mode typing jk in insert mode
+:map! jk <esc>
+
+"autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
+"setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+"au FileType c,cpp setlocal comments-=:// comments+=f://
+
+syntax on
+"colorscheme onedark
+
+inoremap {<CR> {<CR><CR>}<UP><TAB>
+
+" Disables automatic commenting on newline:
+autocmd FileType * setlocal formatoptions-=cro
