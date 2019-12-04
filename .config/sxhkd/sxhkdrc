@@ -26,10 +26,10 @@ super + t
     tor-browser
 
 super + v
-    virtualbox
+    vlc
 
 super + shift + v
-    vlc
+    virtualbox
 
 XF86MonBrightnessDown
 	xbacklight -dec 10
