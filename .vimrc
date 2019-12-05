@@ -68,7 +68,7 @@ set autoindent
 set viminfo=
 
 "spell check based on language
-map <F6> :setlocal spell spelllang=en_us<CR>
+map <F6> :setlocal spell! spelllang=en_us<CR>
 
 " Splits open at the bottom and right, which is non-retarded, unlike vim defaults.
 set splitbelow splitright

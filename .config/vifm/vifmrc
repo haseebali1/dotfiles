@@ -15,7 +15,6 @@ set nohlsearch
 set incsearch
 set suggestoptions=normal,visual,view,otherpane,keys,marks,registers
 colorscheme default
-view
 
 map <C-h> <C-w>h
 map <C-j> <C-w>j
@@ -89,3 +88,8 @@ filextype *.bmp,*.jpg,*.jpeg,*.png,*.ico,*.gif,*.xpm sxiv -ia 2>/dev/null &
 "filextype *.xcf gimp %f 2>/dev/null &
 
 "set vifminfo=dhistory,chistory,tui,shistory,phistory,fhistory,dirstack,registers,bookmarks,bmarks
+
+nnoremap w :view<cr>
+vnoremap w :view<cr>gv
+
+
