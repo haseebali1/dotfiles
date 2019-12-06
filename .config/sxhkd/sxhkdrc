@@ -17,7 +17,7 @@ super + d
     dmenu_run
 
 super + shift + e
-    lock
+    slock
 
 super + m
     minecraft-launcher
