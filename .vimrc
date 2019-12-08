@@ -9,21 +9,19 @@
 
 call plug#begin()
 
-    "Plug 'ervandew/supertab'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'jmcantrell/vim-virtualenv'
     Plug 'w0rp/ale'
     Plug 'scrooloose/nerdtree'
-"    Plug 'MarcWeber/vim-addon-mw-utils'
-"    Plug 'tomtom/tlib_vim'
-"    Plug 'garbas/vim-snipmate'
     Plug 'SirVer/ultisnips'
     Plug 'honza/vim-snippets'
     Plug 'Valloric/YouCompleteMe'
     Plug 'ctrlpvim/ctrlp.vim'
 
 call plug#end()
+
+filetype plugin on
 
 let g:airline_theme='luna'
 let g:airline_powerline_fonts = 1
@@ -55,6 +53,8 @@ autocmd ColorScheme * highlight! Normal ctermbg=NONE guibg=NONE
     " line
 set number relativenumber
 
+set nocompatible
+
 "4 space for tab instead of 8
 set expandtab
 set shiftwidth=4
@@ -75,10 +75,6 @@ set splitbelow splitright
 
 "enter normal mode typing jk in insert mode
 :map! jk <esc>
-
-"autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
-"setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-"au FileType c,cpp setlocal comments-=:// comments+=f://
 
 syntax on
 "colorscheme onedark
