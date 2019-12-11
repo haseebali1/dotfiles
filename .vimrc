@@ -44,10 +44,10 @@ autocmd ColorScheme * highlight! Normal ctermbg=NONE guibg=NONE
 "hi Normal ctermbg=NONE
 
 " Automatically deletes all trailing whitespace on save.
-   autocmd BufWritePre * %s/\s\+$//e
+autocmd BufWritePre * %s/\s\+$//e
 
 " Update binds when sxhkdrc is updated.
-   autocmd BufWritePost *sxhkdrc !pkill -USR1 sxhkd
+autocmd BufWritePost *sxhkdrc !pkill -USR1 sxhkd
 
 " line numbers, and relative to see increasing and decreasing from current
     " line
@@ -70,7 +70,7 @@ set viminfo=
 "spell check based on language
 map <F6> :setlocal spell! spelllang=en_us<CR>
 
-" Splits open at the bottom and right, which is non-retarded, unlike vim defaults.
+" Splits open at the bottom and right, unlike vim defaults.
 set splitbelow splitright
 
 "enter normal mode typing jk in insert mode
@@ -79,7 +79,16 @@ set splitbelow splitright
 syntax on
 "colorscheme onedark
 
-inoremap {<CR> {<CR><CR>}<UP><TAB>
+"inoremap {<CR> {<CR><CR>}<UP><TAB>
 
 " Disables automatic commenting on newline:
 autocmd FileType * setlocal formatoptions-=cro
+
+" search in current and all subdirectories like fzf
+set path+=**
+
+" list all files in buffer
+map <F5> :ls<CR>
+
+"Display all matching files
+set wildmenu
