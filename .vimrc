@@ -23,10 +23,9 @@ call plug#end()
 
 filetype plugin on
 
-let g:airline_theme='luna'
+let g:airline_theme='minimalist'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#ale#enabled = 1
-
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
@@ -77,7 +76,7 @@ set splitbelow splitright
 :map! jk <esc>
 
 syntax on
-"colorscheme onedark
+colorscheme onedark
 
 "inoremap {<CR> {<CR><CR>}<UP><TAB>
 
@@ -92,3 +91,6 @@ map <F5> :ls<CR>
 
 "Display all matching files
 set wildmenu
+
+set colorcolumn=80
+highlight ColorColumn ctermbg=7

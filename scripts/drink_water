@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+export XDG_RUNTIME_DIR="/run/user/1000"
+
+/usr/bin/mpv ~/Music/Low-battery-sound.mp3 && /usr/bin/notify-send "Drink Water"
