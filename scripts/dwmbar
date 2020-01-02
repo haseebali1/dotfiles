@@ -12,7 +12,7 @@ delim=" | "
 status() { \
 
     #volume
-    if [[ `pactl list sinks | grep Mute | grep y` ]]; 
+    if [[ `pactl list sinks | grep Mute | grep y` ]];
     then
         printf " $(pactl list sinks | grep '^[[:space:]]Volume:' | awk '{print $5}')"
     else
