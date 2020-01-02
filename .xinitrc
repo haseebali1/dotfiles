@@ -11,11 +11,21 @@ dunst &
 picom -b --config ~/.config/picom.conf &
 
 # status bar located in $HOME/.dotfiles/scripts
-dwmbar &
+#dwmbar &
+
+# polybar
+#polybar example &
+
+nm-applet &
 
 # hotkeys
 sxhkd &
 
+#bspwm changes cursor to x on some windows, keep it as pointer
+xsetroot -cursor_name left_ptr &
+
 #exec i3
 
-exec dwm
+#exec dwm
+
+exec bspwm
