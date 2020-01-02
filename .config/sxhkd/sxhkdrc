@@ -48,6 +48,7 @@ super + r
 super + t
     tor-browser
 
+# Toggle between floating and tiling
 super + {_,shift +}n
     bspc node -t '~{tiled,floating}'
 
@@ -81,3 +82,7 @@ XF86AudioMute
 
 super + {_,shift + }{1-9,0}
     bspc {desktop -f,node -d} ^{1-9,10}
+
+# move floating windows
+super + {Left,Right,Up,Down}
+    xdo move {-x -20,-x +20,-y -20,-y +20}
