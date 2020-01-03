@@ -200,7 +200,7 @@ label-volume =   %percentage%%
 label-volume-foreground = ${root.foreground}
 
 label-muted =  %percentage%%
-label-muted-foreground = #666
+label-muted-foreground = ${root.foreground}
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55
