@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Originally by : DistroTube
+# https://gitlab.com/dwt1/dotfiles/blob/master/.dmenu/dmenu-edit-configs.sh
+
 declare options=("bash
 bspwm
 dwm
