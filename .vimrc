@@ -31,6 +31,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 let g:ycm_key_list_select_completion=['<S-J>', '<Down>']
 let g:ycm_key_list_previous_completion=['<S-K>', '<Up>']
+let g:ycm_autoclose_preview_window_after_completion=1
 
 let g:UltiSnipsExpandTrigger="<Tab>"
 let g:UltiSnipsJumpForwardTrigger="<Tab>"
