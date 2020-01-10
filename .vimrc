@@ -24,7 +24,7 @@ call plug#end()
 
 filetype plugin on
 
-let g:airline_theme='minimalist'
+let g:airline_theme='dracula'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#ale#enabled = 1
 
