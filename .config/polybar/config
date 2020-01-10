@@ -58,7 +58,7 @@ module-margin-right = 1
 ;fontname:size;offset from top
 font-0 = terminus:size=10.5;2
 font-1 = FontAwesome5FreeRegular:style=Regular:size=9.5;1
-font-2 = FontAwesome5BrandsRegular:styple=Regular:size=9.5;1
+font-2 = FontAwesome5BrandsRegular:style=Regular:size=9.5;1
 font-3 = FontAwesome5FreeSolid:style=Solid:size=9.5;1
 
 ;modules-left = bspwm i3
@@ -107,6 +107,7 @@ ws-icon-3 = III;
 ws-icon-4 = IV;
 ws-icon-5 = V;
 ws-icon-6 = VI;
+ws-icon-7 = VII;
 
 label-focused = %icon%
 label-focused-foreground = ${colors.foreground-alt}
