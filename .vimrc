@@ -18,6 +18,7 @@ call plug#begin()
     Plug 'honza/vim-snippets'
     Plug 'Valloric/YouCompleteMe'
     Plug 'ctrlpvim/ctrlp.vim'
+    Plug 'dracula/vim', { 'as': 'dracula' }
 
 call plug#end()
 
@@ -39,7 +40,7 @@ let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 
 "for background same as terminal background
 "for i3-sensible-terminal
-autocmd ColorScheme * highlight! Normal ctermbg=NONE guibg=NONE
+"autocmd ColorScheme * highlight! Normal ctermbg=NONE guibg=NONE
 "for st
 "hi Normal ctermbg=NONE
 
@@ -77,7 +78,7 @@ set splitbelow splitright
 :map! jk <esc>
 
 syntax on
-colorscheme onedark
+colorscheme dracula
 
 "inoremap {<CR> {<CR><CR>}<UP><TAB>
 
