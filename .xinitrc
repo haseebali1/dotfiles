@@ -8,7 +8,7 @@ numlockx &
 dunst &
 
 # transparency
-picom -b --config ~/.config/picom.conf &
+#picom -b --config ~/.config/picom.conf &
 
 # status bar located in $HOME/.dotfiles/scripts
 #dwmbar &
@@ -16,7 +16,7 @@ picom -b --config ~/.config/picom.conf &
 # polybar
 #polybar example &
 
-nm-applet &
+#nm-applet &
 
 # hotkeys
 sxhkd &
@@ -28,4 +28,4 @@ xsetroot -cursor_name left_ptr &
 
 #exec dwm
 
-exec bspwm
+#exec bspwm
