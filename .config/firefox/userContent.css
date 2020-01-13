@@ -121,7 +121,7 @@ ytd-search, .sbsb_a, .sbdd_b, .sbfl_b {
 }
 
 /* youtube nav bar background color*/
-ytd-masthead {
+ytd-masthead, ytd-rich-metadata-renderer .yt-simple-endpoint{
     background: var(--bg-color-lighter) !important;
 }
 
@@ -171,6 +171,7 @@ yt-formatted-string, yt-icon svg g path {
     background-color: var(--bg-color-darker) !important;
     color: var(--white-color) !important;
 }
+
 
 /* GMAIL */
 
