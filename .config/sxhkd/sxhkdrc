@@ -90,7 +90,7 @@ super + d
 
 # lock screen using lock script
 super + shift + e
-    lock
+    dm-tool lock
 
 # open minecraft
 super + m
