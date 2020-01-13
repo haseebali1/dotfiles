@@ -172,6 +172,25 @@ yt-formatted-string, yt-icon svg g path {
     color: var(--white-color) !important;
 }
 
+/* REDDIT CSS */
+header div, ._12Ewyh01Y1cMPB3Ri_F1C4, ._23h0-EcaBUorIHC-JZyh6J, ._1poyrkZ7g36PawDueRza-J, ._3RPJ8hHnfFohktLZca18J6, ._2j6XpwwZyn7dNcfH7Blz0B, ._ZhON3a3vplThB8NFwuJn, ._2EUcwf_tbEz93vN5QWYP7O, ._3ZTxrJ36ejYA39ZNctzfrx, .wBtTDilkW_rtT2k5x3eie, .TmgZY6tDcdErbE5d7E0HJ {
+    background: var(--bg-color-lighter) !important;
+}
+
+#header-search-bar, .qYj03fU5CXf5t2Fc5iSvg, .__ns__pop2top, .PageColumns, .q4a8asWOWdfdniAbgNhMh, ._3JDs8KEQIXSMn1bTF2ZqJ_, ._3ozFtOe6WpJEMUtxDOIvtU{
+    background-color: var(--main-bg-color) !important;
+}
+
+.h-jI8r2f9ozTNqu_2TBeY{
+    background-color: var(--main-bg-color) !important;
+}
+#header-quicklinks-popular svg,
+#header-quicklinks-all svg,
+#header-quicklinks-rpan svg{
+    fill: var(--purple-color) !important;
+
+}
+
 
 /* GMAIL */
 
