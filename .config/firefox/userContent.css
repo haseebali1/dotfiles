@@ -1,0 +1,181 @@
+:root {
+    --main-bg-color : #21222C;
+    --bg-color-lighter : #424450;
+    --bg-color-darker : #191A21 ;
+    --blue-color : #8BE9FD;
+    --white-color : #FFFFFF;
+    --purple-color : #D6ACFF;
+    --yellow-color : #FFFFA5;
+    --black-color : #000000;
+
+}
+
+* {
+    color: var(--blue-color) !important;
+}
+
+h1, h2, h3, h4, h5, h6, a, small, p, span, article{
+    color: var(--white-color) !important;
+}
+
+
+a {
+    color : var(--purple-color) !important;
+}
+
+a:hover {
+    color: white !important;
+}
+
+input, textarea {
+    background-color: var(--bg-color-lighter) !important;
+}
+
+/* color that the text is written in on youtube search bar*/
+#container.ytd-searchbox input.ytd-searchbox {
+    color: var(--yellow-color) !important;
+}
+
+input[type="text"]::-moz-placeholder {
+    color: var(--yellow-color) !important;
+}
+
+*::placeholder {
+    color: var(--yellow-color) !important;
+}
+
+/* DUCKDUCKGO CSS */
+#header_wrapper{
+    background-color: var(--bg-color-lighter) !important;
+}
+
+#search_form_input, #search_form {
+    background-color: var(--main-bg-color) !important;
+    color: var(--yellow-color) !important;
+}
+
+.acp, .acp-wrap{
+    background-color: var(--main-bg-color) !important;
+    color: var(--blue-color) !important;
+}
+
+#web_content_wrapper , #zci-github{
+    background-color: var(--main-bg-color) !important;
+}
+
+.acp--highlight {
+    background-color: var(--bg-color-darker) !important;
+    color: var(--white-color) !important;
+}
+
+.tile, .tile__expand, .c-info__link{
+    background-color: var(--bg-color-lighter) !important;
+    color: var(--white-color) !important;
+}
+
+.footer {
+    background-color: var(--main-bg-color) !important;
+    color: var(--white-color) !important;
+}
+
+.footer__card {
+    background-color: var(--bg-color-lighter) !important;
+}
+
+.result--more__btn, .feedback-btn__send{
+    background-color: var(--bg-color-lighter) !important;
+}
+
+
+.snippet-code-css, .snippet-code-html {
+    background-color: var(--bg-color-lighter) !important;
+}
+
+
+/* GITHUB CSS */
+
+.Header-old, .header{
+    background-color: var(--bg-color-lighter) !important;
+}
+
+main, .application-main, .logged-out{
+    background-color: var(--main-bg-color) !important;
+}
+
+.Bump-link , .rounded-1, .auth-form-body, .Box, .profile-timeline-year-list, .ajax-pagination-btn, .js-selected-navigation-item, .commit-tease, .Box-header, .pagehead-actions li a, .tooltipped, .select-menu-button, details summary, .Box-body{
+    background-color: var(--bg-color-lighter) !important;
+}
+
+.input-block, .header-search-input, .UnderlineNav, .profile-timeline-month-heading,.pagehead , .js-navigation-item{
+    background-color: var(--main-bg-color) !important;
+}
+
+
+/* YOUTUBE CSS */
+
+/* background color for most of the youtube pages */
+.content, ytd-browse, ytd-mini-guide-renderer, #endpoint ,ytd-guide-renderer,
+ytd-watch-flexy , ytd-multi-page-menu-renderer, ytd-active-account-header-renderer,
+ytd-search, .sbsb_a, .sbdd_b, .sbfl_b {
+    background-color: var(--main-bg-color) !important;
+}
+
+/* youtube nav bar background color*/
+ytd-masthead {
+    background: var(--bg-color-lighter) !important;
+}
+
+/* Youtube logo and icon */
+#logo div svg g g path {
+    fill:var(--purple-color) !important;
+}
+
+/* side panel links and svg icons associated with them */
+yt-formatted-string, yt-icon svg g path {
+    color: var(--purple-color) !important;
+}
+
+*/
+.ytd-guide-entry-renderer:hover {
+    color: var(--white-color) !important;
+    fill: var(--white-color) !important;
+    background-color: var(--bg-color-darker) !important;
+}
+
+/* search box */
+.ytd-searchbox {
+    background-color: var(--main-bg-color) !important;
+}
+
+#search-form {
+    color : blue !important;
+    background-color: var(--main-bg-color) !important;
+}
+
+#search-form button {
+    background-color: var(--purple-color) !important;
+    color: var(--black-color) !important;
+}
+
+/* for youtube search bar button */
+.ytd-searchbox svg{
+    background-color: var(--purple-color) !important;
+}
+
+.ytd-searchbox svg g path{
+    color: var(--black-color) !important;
+}
+
+/* searching dropdown list that gives suggestions */
+.sbsb_c:hover b, .sbqs_c:hover, .sbsb_d {
+    background-color: var(--bg-color-darker) !important;
+    color: var(--white-color) !important;
+}
+
+/* GMAIL */
+
+/* gmail sign in page */
+.VmOpGe, .xkfVF{
+    background-color: var(--main-bg-color) !important;
+    border-color: #000000 !important;
+}
