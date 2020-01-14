@@ -7,12 +7,12 @@
     --purple-color : #D6ACFF;
     --yellow-color : #FFFFA5;
     --black-color : #000000;
-
 }
 
 * {
     color: var(--blue-color) !important;
 }
+
 
 h1, h2, h3, h4, h5, h6, a, small, p, span, article{
     color: var(--blue-color) !important;
@@ -31,10 +31,6 @@ input, textarea {
     background-color: var(--bg-color-lighter) !important;
 }
 
-/* color that the text is written in on youtube search bar*/
-#container.ytd-searchbox input.ytd-searchbox {
-    color: var(--yellow-color) !important;
-}
 
 input[type="text"]::-moz-placeholder {
     color: var(--yellow-color) !important;
@@ -43,6 +39,18 @@ input[type="text"]::-moz-placeholder {
 *::placeholder {
     color: var(--yellow-color) !important;
 }
+
+/* FIREFOX CSS */
+#preferences-body, .sticky-container , window, browser, .main-content, .main, #page-header, #page-options, .main-search, .main-heading, addon-list, section , #html-view-browser #document html body, recommended-addon-list, #addons-page, #main-page-content, .table-shown, .config-background-wrapper, #about-config-search, .page-content, .Page-content, recommended-extensions-section, .view-footer-item, .main{
+    background-color: var(--main-bg-color) !important;
+}
+
+search-textbox, treecol, richlistbox, #oneClickSearchProvidersGroup, #engineList, .sync-group, .Card, addon-card div, #prefs, #search-container, taar-notice, recommended-addon-card, .card, message-bar, .discopane-notice-content, section.SearchContextCard, section.SearchFilters, div.SearchResults, .Card-contents, .Card-header, .SearchResult{
+    background-color: var(--bg-color-lighter) !important;
+    color: var(--blue-color) !important;
+    border-color: var(--black-color) !important;
+}
+
 
 /* DUCKDUCKGO CSS */
 #header_wrapper{
@@ -86,10 +94,11 @@ input[type="text"]::-moz-placeholder {
     background-color: var(--bg-color-lighter) !important;
 }
 
-
-.snippet-code-css, .snippet-code-html {
+.snippet-code-css, .snippet-code-html, .prettyprint {
     background-color: var(--bg-color-lighter) !important;
 }
+
+
 
 
 /* GITHUB CSS */
@@ -172,6 +181,11 @@ yt-formatted-string, yt-icon svg g path {
     color: var(--white-color) !important;
 }
 
+/* color that the text is written in on youtube search bar*/
+#container.ytd-searchbox input.ytd-searchbox {
+    color: var(--yellow-color) !important;
+}
+
 /* REDDIT CSS */
 header div, ._12Ewyh01Y1cMPB3Ri_F1C4, ._23h0-EcaBUorIHC-JZyh6J, ._1poyrkZ7g36PawDueRza-J, ._3RPJ8hHnfFohktLZca18J6, ._2j6XpwwZyn7dNcfH7Blz0B, ._ZhON3a3vplThB8NFwuJn, ._2EUcwf_tbEz93vN5QWYP7O, ._3ZTxrJ36ejYA39ZNctzfrx, .wBtTDilkW_rtT2k5x3eie, .TmgZY6tDcdErbE5d7E0HJ {
     background: var(--bg-color-lighter) !important;
@@ -198,4 +212,20 @@ header div, ._12Ewyh01Y1cMPB3Ri_F1C4, ._23h0-EcaBUorIHC-JZyh6J, ._1poyrkZ7g36Paw
 .VmOpGe, .xkfVF{
     background-color: var(--main-bg-color) !important;
     border-color: #000000 !important;
+}
+
+/* unread mail */
+ .zE{
+    background: var(--bg-color-darker) !important;
+    color: var(--blue-color) !important;
+}
+
+/* read mail */
+ .yO{
+    background: var(--bg-color-lighter) !important;
+    color: var(--blue-color) !important;
+}
+
+.oZ-x3, .apU, .WA {
+    color: var(--blue-color) !important;
 }
