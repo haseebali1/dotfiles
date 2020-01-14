@@ -46,7 +46,7 @@ input[type="text"]::-moz-placeholder {
     background-color: var(--main-bg-color) !important;
 }
 
-search-textbox, treecol, richlistbox, #oneClickSearchProvidersGroup, #engineList, .sync-group, .Card, addon-card div, #prefs, #search-container, taar-notice, recommended-addon-card, .card, message-bar, .discopane-notice-content, section.SearchContextCard, section.SearchFilters, div.SearchResults, .Card-contents, .Card-header, .SearchResult{
+search-textbox, treecol, richlistbox, #oneClickSearchProvidersGroup, #engineList, .sync-group, .Card, addon-card div, #prefs, #search-container, taar-notice, recommended-addon-card, .card, message-bar, .discopane-notice-content, section.SearchContextCard, section.SearchFilters, .SearchResults, .Card-contents, .Card-header, .SearchResult{
     background-color: var(--bg-color-lighter) !important;
     color: var(--blue-color) !important;
     border-color: var(--black-color) !important;
@@ -187,6 +187,7 @@ yt-formatted-string, yt-icon svg g path {
     color: var(--yellow-color) !important;
 }
 
+
 /* REDDIT CSS */
 header div, ._12Ewyh01Y1cMPB3Ri_F1C4, ._23h0-EcaBUorIHC-JZyh6J, ._1poyrkZ7g36PawDueRza-J, ._3RPJ8hHnfFohktLZca18J6, ._2j6XpwwZyn7dNcfH7Blz0B, ._ZhON3a3vplThB8NFwuJn, ._2EUcwf_tbEz93vN5QWYP7O, ._3ZTxrJ36ejYA39ZNctzfrx, .wBtTDilkW_rtT2k5x3eie, .TmgZY6tDcdErbE5d7E0HJ {
     background: var(--bg-color-lighter) !important;
@@ -262,4 +263,15 @@ code, pre , #intro, #pkg-updates, .mw-search-profile-tabs, #toc, .archwiki-templ
     background: var(--bg-color-lighter) !important;
     color: var(--blue-color) !important;
 
+}
+
+
+/* IMDB CSS */
+
+#sis_pixel, #wrapper, #pagecontent, #main, .article, .imdb-footer {
+    background-color: var(--main-bg-color) !important;
+}
+
+#imdbHeader, tr, #sidebar, .aux-content-widget-2 , .list-preview, .recently-viewed, .plot_summary_wrapper, #title_completed_pro_link, .rec-jaw-upper, .rec-jaw-lower, .rec-jaw-teeth, .odd, .even {
+    background: var(--bg-color-lighter) !important;
 }
