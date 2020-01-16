@@ -2,7 +2,7 @@
 # ~/.bash_profile
 #
 
-export PATH=$PATH:$HOME/.dotfiles/scripts/
+export PATH=$PATH:$HOME/.dotfiles/scripts/:$HOME/Downloads/jdk-13.0.2/bin/
 
 export EDITOR="vim"
 export TERMINAL="st"
