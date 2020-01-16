@@ -271,3 +271,10 @@ code, pre , #intro, #pkg-updates, .mw-search-profile-tabs, #toc, .archwiki-templ
     background: var(--bg-color-lighter) !important;
 }
 
+
+/* java docs */
+.contentContainer {
+    background-color: var(--main-bg-color) !important;
+
+
+}
