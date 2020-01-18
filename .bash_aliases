@@ -80,3 +80,10 @@ alias wion='nmcli radio wifi on'
 alias wiof='nmcli radio wifi off'
 alias wili='nmcli device wifi list'
 alias wico='nmcli device wifi connect'
+
+j() {
+    name=$(pwd | rev | cut -d '/' -f 1 | rev)
+    touch $name.java
+}
+
+alias j='j'
