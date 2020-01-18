@@ -1,0 +1,220 @@
+* {
+        -moz-appearance: none !important;
+}
+
+#urlbar, #urlbar-input {
+		background-color: #424450 !important;
+		text-align: center !important;
+		color : #ffffff !important;
+		}
+/*
+#urlbar {border: none !important;}
+#urlbar[focused] {box-shadow: initial !important;}
+*/
+
+.tab-background[selected="true"]{
+    background: #191A21 !important;
+}              /* this sets the color of the tab background */
+
+.tab-background{
+    background: #424450 !important;
+}              /* this sets the color of the tab background */
+
+.tab-line {
+    background-color: #FFFFA5 !important;
+}
+
+.tabbrowser-tab[selected="true"] {
+    color : #D6ACFF !important;
+    opacity : 1;
+}
+
+.tabbrowser-tab{
+    color : #FFFFA5 !important;
+    opacity : .7;
+}
+
+.tab-line[selected="true"] {background-color : #D6ACFF !important;}
+/* this sets the color of the line above the tab */
+
+#tabs-newtab-button {
+    float: right;
+    background-color: #424450 !important;
+    color : #D6ACFF !important;
+}
+
+#nav-bar {
+    background: #191A21 !important;
+    background-color: #191A21 !important;
+    color :#D6ACFF !important;
+
+}
+
+/* background for the bar where tabs are*/
+#TabsToolbar {
+      background: #424450 !important;
+  }
+
+/*
+ * Remove circle, background and padding from back button
+ */
+
+:root:not([uidensity="compact"]) #back-button > .toolbarbutton-icon {
+  background-color: unset !important;
+  border: unset !important;
+  padding: var(--toolbarbutton-inner-padding) !important;
+  border-radius: var(--toolbarbutton-border-radius) !important;
+  width: calc(2 * var(--toolbarbutton-inner-padding) + 16px) !important;
+}
+
+/* Hover and Active states to mimic other buttons */
+:root:not([uidensity="compact"]) #back-button:hover:not([disabled]) > .toolbarbutton-icon {
+  background-color: var(--toolbarbutton-hover-background) !important;
+}
+
+:root:not([uidensity="compact"]) #back-button:active:not([disabled]) > .toolbarbutton-icon {
+  background-color: var(--toolbarbutton-active-background) !important;
+}
+
+/* Remove pre-padding */
+:root:not([uidensity="compact"]) #back-button {
+  padding-inline-start: 3px !important;
+}
+
+
+/*
+ * Description: A dark right-click chrome-like context menu.
+ *
+ * Screenshot: https://imgur.com/neMpGJl
+ *
+ * Contributor(s): jy1263
+ */
+
+/* Please read the code style guidelines in CONTRIBUTING.md */
+
+/* Your code here */
+menupopup {
+	-moz-appearance: none !important;
+	padding: 2px 2px 2px 2px !important;
+	background-color: #191A21 !important;
+	border: 1px #D6ACFF solid !important;
+	min-width: 280px !important;
+}
+menuseparator {
+	-moz-appearance: none !important;
+	border: none !important;
+	padding: .5px 0px .5px 0px !important;
+	margin: 4px 8px 4px 8px !important;
+	background-color: #D6ACFF !important;
+}
+menuitem, menu {
+	-moz-appearance: none !important;
+	color: #D6ACFF !important;
+	padding: 5px 0px 5px 0px !important;
+}
+menuitem[disabled="true"], menuitem[disabled="true"] > .menu-text {
+	color: #424450 !important;
+}
+menuitem:hover, menu:hover, menu[open="true"], menuitem[_moz-menuactive="true"]	 {
+	-moz-appearance: none !important;
+	padding: 5px 0px 5px 0px !important;
+	background-color: #21222C !important;
+}
+menugroup {
+	padding: 0px !important;
+	background-color: transparent !important;
+}
+menuitem > .menu-text, menuitem > .menu-iconic-text {
+	color: #D6ACFF !important;
+}
+menuitem[type="checkbox"] {
+	padding-left: 8px !important;
+	padding-top: 6.5px !important;
+	padding-bottom: 6.5px !important;
+}
+menuitem[type="radio"] {
+	padding-left: 8px !important;
+	padding-top: 6.5px !important;
+	padding-bottom: 6.5px !important;
+}
+menuitem[type="checkbox"] > .menu-iconic-text, menuitem[type="radio"] > .menu-iconic-text {
+	padding-left: 5px !important;
+}
+menuitem[checked="true"][type="checkbox"] > .menu-iconic-left {
+	padding: 7px 0px 0px 0px !important;
+	border: solid white;
+	border-width: 0 0 2px 2px;
+	transform: rotate(-45deg) scale(.75);
+	margin-bottom: 4px !important;
+}
+menuitem[checked="true"][type="radio"] > .menu-iconic-left {
+	padding: 1px !important;
+	border: solid white;
+	height: 17px !important;
+	border-radius: 100%;
+	background: black;
+	transform: scale(.5);
+}
+menucaption {
+	background-color: black !important;
+	color: white !important;
+}
+#ContentSelectDropdown > menupopup {
+	background-image: none !important;
+    background: black !important;
+}
+#ContentSelectDropdown {
+	padding: 0px !important;
+}
+menulist {
+	-moz-appearance: none !important;
+	padding: 4px 4px 4px 4px !important;
+	border: 2px solid #666666 !important;
+	background-color: #000000 !important;
+}
+menulist:hover {
+	padding: 4px 4px 4px 4px !important;
+	border: 2px solid #999999 !important;
+	background-color: transparent !important;
+}
+menulist[open="true"]  {
+	border: 2px solid #666666 !important;
+	background-color: #000000 !important;
+}
+#context-back > .menu-iconic-left, #context-forward > .menu-iconic-left, #context-reload > .menu-iconic-left, #context-stop > .menu-iconic-left, #context-bookmarkpage > .menu-iconic-left {
+	padding: 0px !important;
+}
+.menu-iconic-left {
+	-moz-appearance: none !important;
+	padding: 0px 5px 0px 9px !important;
+}
+tooltip {
+	-moz-appearance: none !important;
+	color: #D6ACFF !important;
+	background-color: #000000 !important;
+	border: 1px solid #D6ACFF !important;
+	padding: 6.5px !important;
+}
+
+#sidebar, #sidebar-box, #sidebar-header , .sidebar-panel{
+    background: #21222C !important;
+    background-color: #21222C !important;
+    color : #D6ACFF !important;
+	border-bottom: 1px solid #D6ACFF !important;
+
+}
+
+#sidebar-splitter {
+    color : #D6ACFF !important;
+    background: #21222C !important;
+    background-color: #D6ACFF !important;
+  }
+
+  #sidebars-titlebutton>menupopup>menuitem:hover>.menu-iconic-text{
+                 color: #ffffff !important;
+               }
+
+sidebarheader {
+    color : #D6ACFF !important;
+}
+
