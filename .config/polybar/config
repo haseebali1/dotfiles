@@ -105,9 +105,11 @@ ws-icon-1 = I;龜
 ws-icon-2 = II;
 ws-icon-3 = III;
 ws-icon-4 = IV;
-ws-icon-5 = V;
+ws-icon-5 = V;
 ws-icon-6 = VI;
 ws-icon-7 = VII;
+ws-icon-8 = VIII;
+ws-icon-9 = IX;
 
 label-focused = %icon%
 label-focused-foreground = ${colors.primary}
