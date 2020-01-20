@@ -22,7 +22,7 @@ bspc rule -a firefox desktop='^1'
 bspc rule -a "Tor Browser" desktop='^4'
 bspc rule -a minecraft-launcher desktop='^5'
 bspc rule -a "VirtualBox Manager" desktop='^5'
-bspc rule -a vlc desktop='^6'
+bspc rule -a Vlc desktop='^6'
 bspc rule -a feh desktop='^5'
 bspc rule -a Zathura desktop='^5' state=tiled
 
