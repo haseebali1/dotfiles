@@ -10,7 +10,10 @@ i3
 polybar
 st
 sxhkd
-vim")
+vim
+userContent
+userChrome
+")
 
 choice=$(echo -e "${options[@]}" | dmenu -i -p 'Edit a config file: ')
 
@@ -22,7 +25,7 @@ case "$choice" in
 		choice="$HOME/.dotfiles/.config/bspwm/bspwmrc"
 	;;
 	dwm)
-		choice="$HOME/dwm/config.h"
+		choice="$HOME/.dotfiles/suckless/dwm/config.h"
 	;;
 	i3)
 		choice="$HOME/.dotfiles/.config/i3wm/config"
@@ -31,13 +34,19 @@ case "$choice" in
 		choice="$HOME/.dotfiles/.config/polybar/config"
 	;;
 	st)
-		choice="$HOME/st/config.h"
+		choice="$HOME/.dotfile/suckless/st/config.h"
 	;;
 	sxhkd)
 		choice="$HOME/.dotfiles/.config/sxhkd/sxhkdrc"
 	;;
 	vim)
 		choice="$HOME/.dotfiles/.vimrc"
+	;;
+	userContent)
+		choice="$HOME/.dotfiles/firefox/userContent.css"
+	;;
+	userChrome)
+		choice="$HOME/.dotfiles/firefox/userChrome.css"
 	;;
 	*)
 		exit 1
