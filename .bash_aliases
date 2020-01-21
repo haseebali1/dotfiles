@@ -3,6 +3,7 @@ alias vpn='/opt/cisco/anyconnect/bin/vpn'
 alias vpnui='/opt/cisco/anyconnect/hin/vpnui'
 alias open='xdg-open'
 alias r='ranger'
+alias fm='vifmrun'
 
 # navigation
 alias h='cd'
