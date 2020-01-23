@@ -211,8 +211,12 @@ header div, ._12Ewyh01Y1cMPB3Ri_F1C4, ._23h0-EcaBUorIHC-JZyh6J, ._1poyrkZ7g36Paw
     border-color: #000000 !important;
 }
 
+.Bu, .Am{
+    background-color: var(--bg-color-lighter) !important;
+}
+
 /* unread mail */
-.zE{
+.zE, .aoI, .I5{
     background: var(--bg-color-darker) !important;
     color: var(--blue-color) !important;
 }
