@@ -20,7 +20,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "", "", "7", "8", "9" };
+static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -31,9 +31,13 @@ static const Rule rules[] = {
 	{ "firefox",                    NULL,       NULL,       1<<0,            0,           -1 },
 	{ "st-256color",                NULL,       NULL,       1<<1,            0,           -1 },
 	{ "Tor Browser",                NULL,       NULL,       1<<3,            0,           -1 },
-	{ "minecraft-launcher",         NULL,       NULL,       1<<4,            0,           -1 },
+	{ "vlc",                        NULL,       NULL,       1<<4,            0,           -1 },
+	{ "Gimp",                       NULL,       NULL,       1<<5,            0,           -1 },
 	{ "VirtualBox Manager",         NULL,       NULL,       1<<5,            0,           -1 },
-	{ "vlc",                        NULL,       NULL,       1<<5,            0,           -1 },
+	{ "Zathura",                    NULL,       NULL,       1<<5,            0,           -1 },
+	{ "feh",                        NULL,       NULL,       1<<6,            0,           -1 },
+	{ "minecraft-launcher",         NULL,       NULL,       1<<7,            0,           -1 },
+	{ "Transmission-gtk",           NULL,       NULL,       1<<8,            0,           -1 },
 };
 
 /* layout(s) */
