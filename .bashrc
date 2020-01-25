@@ -14,6 +14,7 @@
 
 #cd into directory by typing just the directory name
 shopt -s autocd
+shopt -s extglob
 
 # If not running interactively, don't do anything
 case $- in
