@@ -24,3 +24,15 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCljYmI53HACHnVa3d3JfFlw "yt
 
 #arch news
 https://www.archlinux.org/feeds/news/ "tech"
+
+# r/bash
+https://www.reddit.com/r/bash.rss "r" "~r/bash"
+
+# r/linux4noobs
+https://www.reddit.com/r/linux4noobs.rss "r" "~r/linux4noobs"
+
+#r/linuxquestions
+https://www.reddit.com/r/linuxquestions.rss "r" "~r/linuxquestions"
+
+#r/unixporn
+https://www.reddit.com/r/unixporn.rss "r" "~r/unixporn"
