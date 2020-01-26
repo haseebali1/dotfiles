@@ -22,7 +22,7 @@ dunst &
 #dwmbar &
 
 # polybar
-#polybar example &
+polybar example &
 
 #nm-applet &
 
