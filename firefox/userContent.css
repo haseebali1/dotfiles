@@ -271,7 +271,7 @@ code, pre , #intro, #pkg-updates, .mw-search-profile-tabs, #toc, .archwiki-templ
     background-color: var(--main-bg-color) !important;
 }
 
-#imdbHeader, tr, #sidebar, .aux-content-widget-2 , .list-preview, .recently-viewed, .plot_summary_wrapper, #title_completed_pro_link, .rec-jaw-upper, .rec-jaw-lower, .rec-jaw-teeth, .odd, .even {
+#imdbHeader, tr, #sidebar, .aux-content-widget-2 , .list-preview, .recently-viewed, .plot_summary_wrapper, #title_completed_pro_link, .rec-jaw-upper, .rec-jaw-lower, .rec-jaw-teeth, .odd, .even, .lister-item {
     background: var(--bg-color-lighter) !important;
 }
 
