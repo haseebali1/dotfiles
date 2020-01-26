@@ -19,10 +19,10 @@ dunst &
 #picom -b --config ~/.config/picom.conf &
 
 # status bar located in $HOME/.dotfiles/scripts
-#dwmbar &
+dwmbar &
 
 # polybar
-polybar example &
+#polybar example &
 
 #nm-applet &
 
@@ -34,6 +34,6 @@ xsetroot -cursor_name left_ptr &
 
 #exec i3
 
-#exec dwm
+exec dwm
 
-exec bspwm
+#exec bspwm
