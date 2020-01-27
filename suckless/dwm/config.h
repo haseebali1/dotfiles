@@ -32,7 +32,7 @@ static const Rule rules[] = {
 	{ "firefox",                    NULL,       NULL,       1<<0,            0,           -1 },
 	{ "st-256color",                NULL,       NULL,       1<<1,            0,           -1 },
 	{ "Tor Browser",                NULL,       NULL,       1<<3,            0,           -1 },
-	{ "vlc",                        NULL,       NULL,       1<<4,            0,           -1 },
+	{ "Vlc",                        NULL,       NULL,       1<<4,            0,           -1 },
 	{ "Gimp",                       NULL,       NULL,       1<<5,            0,           -1 },
 	{ "VirtualBox Manager",         NULL,       NULL,       1<<5,            0,           -1 },
 	{ "Zathura",                    NULL,       NULL,       1<<5,            0,           -1 },
