@@ -8,11 +8,11 @@ static const int rmaster            = 0;        /* 1 means master-area is initia
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=10", "FontAwesome5FreeRegular:size=10", "FontAwesome5BrandsRegular:size=10", "FontAwesome5FreeSolid:size=10" };
 static const char dmenufont[]       = "monospace:size=10";
-static const char col_gray1[]       = "#725271";
-static const char col_gray2[]       = "#725271";
-static const char col_gray3[]       = "#ffffff";
+static const char col_gray1[]       = "#21222C";
+static const char col_gray2[]       = "#21222C";
+static const char col_gray3[]       = "#D6ACFF";
 static const char col_gray4[]       = "#000000";
-static const char col_cyan[]        = "#05dffc";
+static const char col_cyan[]        = "#D6ACFF";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -86,7 +86,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_m,                      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY,                       XK_space,                  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,                  togglefloating, {0} },
-	{ MODKEY,                       XK_r,      togglermaster,  {0} },
+	{ MODKEY,                       XK_r,                      togglermaster,  {0} },
 	{ MODKEY,                       XK_0,                      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,                      tag,            {.ui = ~0 } },
 	{ MODKEY,                       XK_comma,                  focusmon,       {.i = -1 } },
