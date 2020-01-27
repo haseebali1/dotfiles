@@ -96,6 +96,9 @@ super + shift + e
 super + m
     minecraft-launcher
 
+super + q
+    transmission-gtk
+
 # open tor browser
 super + t
     tor-browser
