@@ -125,3 +125,8 @@ extract() {
 }
 
 alias extract='extract'
+
+#graphics card optimus
+alias cardon='sudo tee /proc/acpi/bbswitch <<<ON'
+alias cardoff='sudo tee /proc/acpi/bbswitch <<<OFF'
+alias cards='cat /proc/acpi/bbswitch'

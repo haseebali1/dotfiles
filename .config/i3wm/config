@@ -198,16 +198,16 @@ bar {
 }
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+#bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+#bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+#bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec light -A 5 # increase screen brightness
-bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
+#bindsym XF86MonBrightnessUp exec light -A 5 # increase screen brightness
+#bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
 
 # Touchpad controls
-bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
+#bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
 
 
 exec --no-startup-id tor-browser
@@ -224,11 +224,11 @@ new_window pixel 0
 #border only for terminal
 for_window [class = "st"] border pixel 1
 
-bindsym $mod+b exec --no-startup-id firefox
-bindsym $mod+Shift+b exec --no-startup-id firefox --private-window
+#bindsym $mod+b exec --no-startup-id firefox
+#bindsym $mod+Shift+b exec --no-startup-id firefox --private-window
 
-bindsym $mod+m exec minecraft-launcher
+#bindsym $mod+m exec minecraft-launcher
 
-bindsym $mod+t exec --no-startup-id tor-browser
+#bindsym $mod+t exec --no-startup-id tor-browser
 
-bindsym $mod+Shift+v exec VirtualBox
+#bindsym $mod+Shift+v exec VirtualBox

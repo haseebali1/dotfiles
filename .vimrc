@@ -19,6 +19,7 @@ call plug#begin()
     Plug 'Valloric/YouCompleteMe'
     Plug 'ctrlpvim/ctrlp.vim'
     Plug 'dracula/vim', { 'as': 'dracula' }
+    Plug 'Yggdroot/indentLine'
 
 call plug#end()
 
@@ -96,3 +97,5 @@ set wildmenu
 
 set colorcolumn=80
 highlight ColorColumn ctermbg=7
+
+:imap n~ ñ
