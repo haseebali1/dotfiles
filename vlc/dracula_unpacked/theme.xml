@@ -144,7 +144,7 @@
       </Panel>
       <Panel id="fs_Control_panel" x="200" y="10" width="200" height="57" lefttop="leftbottom" rightbottom="rightbottom" xkeepratio="true">
         <Checkbox state="vlc.isPlaying" up1="images_play_n" up2="images_pause_n" down1="images_play_p" down2="images_pause_p" over1="images_play_h" over2="images_pause_h" action1="vlc.play()" action2="vlc.pause()" id="fs_Play" x="79" y="11" lefttop="leftbottom" rightbottom="leftbottom"/>
-        <Button up="images_prev_n" down="images_prev_p" over="images_prev_h" action="playlist.next()" id="fs_btn_prev" x="45" y="14" lefttop="leftbottom" rightbottom="leftbottom"/>
+        <Button up="images_prev_n" down="images_prev_p" over="images_prev_h" action="playlist.previous()" id="fs_btn_prev" x="45" y="14" lefttop="leftbottom" rightbottom="leftbottom"/>
         <Button up="images_next_n" down="images_next_p" over="images_next_h" action="playlist.next()" id="fs_btn_next" x="120" y="14" lefttop="leftbottom" rightbottom="leftbottom"/>
       </Panel>
       <Panel id="fs_Volume_panel" x="430" y="24" width="160" height="30" lefttop="rightbottom" rightbottom="rightbottom">
