@@ -1,0 +1,23 @@
+URxvt*background: #21222C
+URxvt*foreground: white
+URxvt*font: xft:DejaVu Sans Mono:pixelsize=16:antialias=true:hinting=true
+URxvt*boldFont: xft:DejaVu Sans Mono:bold:pixelsize=16:antialias=true:hinting=true
+URxvt*scrollBar: false
+
+# dracula colors
+URxvt*color0: #21222C
+URxvt*color1: #FF5555
+URxvt*color2: #50FA7B
+URxvt*color3: #F1FA8C
+URxvt*color4: #BD93F9
+URxvt*color5: #FF79C6
+URxvt*color6: #8BE9FD
+URxvt*color7: #F8F8F2
+URxvt*color8: #6272A4
+URxvt*color9: #FF6E6E
+URxvt*color10: #69FF94
+URxvt*color11: #FFFFA5
+URxvt*color12: #D6ACFF
+URxvt*color13: #FF92DF
+URxvt*color14: #A4FFFF
+URxvt*color15: #FFFFFF
