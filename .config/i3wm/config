@@ -215,8 +215,8 @@ exec --no-startup-id st
 exec --no-startup-id firefox
 exec --no-startup-id firefox --private-window
 exec --no-startup-id nm-applet
-exec --no-startup-id feh --bg-scale /home/haseeb/Pictures/purple_lion.jpg
-exec --no-startup-id compton --vsync opengl --backend glx --paint-on-overlay
+exec --no-startup-id feh --bg-scale --no-fehbg /home/haseeb/Pictures/purple_lion.jpg
+#exec --no-startup-id compton --vsync opengl --backend glx --paint-on-overlay
 
 #no title bar
 new_window pixel 0
