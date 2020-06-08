@@ -28,6 +28,9 @@ dwmbar &
 # hotkeys
 sxhkd &
 
+#map caps to escape and escape to caps
+setxkbmap -option caps:swapescape &
+
 #bspwm changes cursor to x on some windows, keep it as pointer
 xsetroot -cursor_name left_ptr &
 

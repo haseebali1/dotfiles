@@ -4,6 +4,7 @@ alias vpnui='/opt/cisco/anyconnect/hin/vpnui'
 alias open='xdg-open'
 alias r='ranger'
 alias fm='vifmrun'
+alias feh='feh -Z'
 
 # navigation
 alias h='cd'

@@ -2,7 +2,7 @@
 # ~/.bash_profile
 #
 
-export PATH=$PATH:$HOME/.dotfiles/scripts/:$HOME/Downloads/jdk-13.0.2/bin/:$HOME/.android/avd/:$HOME/Android/Sdk/:/opt/android-sdk/tools
+export PATH=$PATH:$HOME/.dotfiles/scripts/
 
 export EDITOR="vim"
 export TERMINAL="st"

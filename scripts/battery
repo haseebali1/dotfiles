@@ -1,14 +1,18 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 export XDG_RUNTIME_DIR="/run/user/1000"
 #export DISPLAY=:0.0
 
 #Code:
 
-bat_percent=$(acpi -b | grep "Discharging" | awk ' { print ($4)-0}')
+#Not charging/Charging/Discharging/Unkown
+bat_status=$(cat /sys/class/power_supply/BAT0/status)
+bat_percent=$(cat /sys/class/power_supply/BAT0/capacity)
 
-[ "$bat_percent" -lt "15" ] && /usr/bin/mpv /home/haseeb/Music/Low-battery-sound.mp3 && notify-send "Battery Low ${bat_percent}"
+if [ $bat_status = "Discharging" ]
+then
+    [ "$bat_percent" -lt 15 ] && /usr/bin/mpv /home/haseeb/Music/Low-battery-sound.mp3 && notify-send "Battery Low ${bat_percent}"
+else
+    [ "$bat_percent" -eq 100 ] && /usr/bin/mpv /home/haseeb/Music/Low-battery-sound.mp3 && notify-send "Battery Full ${bat_percent}"
 
-bat_percent=$(acpi -b | grep 'Charging\|Not charging' | awk ' { print ($NF)-0}')
-
-[ "$bat_percent" -eq "100" ] && /usr/bin/mpv /home/haseeb/Music/Low-battery-sound.mp3 && notify-send "Battery Full ${bat_percent}"
+fi

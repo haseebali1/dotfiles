@@ -37,15 +37,24 @@ status() { \
 	printf "$delim"
 
     #battery
-    if [[ `acpi -b | grep Discharging` ]];
+    bat_status=$(cat /sys/class/power_supply/BAT0/status)
+
+    if [ $bat_status = "Discharging" ]
     then
-        printf "$(acpi -b | awk '{print " " $4}' | tr ',' ' ' | sed 's/[[:blank:]]*$//')"
-    elif [[ `acpi -b | grep "Not charging"` ]];
-    then
-        printf "$(acpi -b | awk '{print " " $5}' | tr ',' ' ' | sed 's/[[:blank:]]*$//')"
+        printf " $(cat /sys/class/power_supply/BAT0/capacity)"
     else
-        printf "$(acpi -b | awk '{print " " $4}' | tr ',' ' ' | sed 's/[[:blank:]]*$//')"
+        printf " $(cat /sys/class/power_supply/BAT0/capacity)"
     fi
+
+    #if [[ `acpi -b | grep Discharging` ]];
+    #then
+    #    printf "$(acpi -b | awk '{print " " $4}' | tr ',' ' ' | sed 's/[[:blank:]]*$//')"
+    #elif [[ `acpi -b | grep "Not charging"` ]];
+    #then
+    #    printf "$(acpi -b | awk '{print " " $5}' | tr ',' ' ' | sed 's/[[:blank:]]*$//')"
+    #else
+    #    printf "$(acpi -b | awk '{print " " $4}' | tr ',' ' ' | sed 's/[[:blank:]]*$//')"
+    #fi
 
     printf "$delim"
 

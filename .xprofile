@@ -52,6 +52,6 @@ xsetroot -cursor_name left_ptr &
 
 #exec i3
 
-#exec dwm
+exec dwm
 
-exec bspwm
+#exec bspwm
