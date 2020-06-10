@@ -41,7 +41,7 @@ status() { \
 
     if [ $bat_status = "Discharging" ]
     then
-        printf " $(cat /sys/class/power_supply/BAT0/capacity)"
+        printf " $('cat /sys/class/power_supply/BAT0/capacity | sed 's/$/%/'')"
     else
         printf " $(cat /sys/class/power_supply/BAT0/capacity)"
     fi
