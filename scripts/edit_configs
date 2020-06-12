@@ -34,7 +34,7 @@ case "$choice" in
 		choice="$HOME/.dotfiles/.config/polybar/config"
 	;;
 	st)
-		choice="$HOME/.dotfile/suckless/st/config.h"
+		choice="$HOME/.dotfiles/suckless/st/config.h"
 	;;
 	sxhkd)
 		choice="$HOME/.dotfiles/.config/sxhkd/sxhkdrc"
