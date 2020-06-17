@@ -1,0 +1,18 @@
+00:00:00.236152 VirtualBox GUI VM Selector Window 6.1.10 r138449 linux.amd64 (Jun  8 2020 08:33:44) release log
+00:00:00.236155 Log opened 2020-06-16T23:43:18.794582000Z
+00:00:00.236156 Build Type: release
+00:00:00.236160 OS Product: Linux
+00:00:00.236162 OS Release: 5.7.2-arch1-1
+00:00:00.236163 OS Version: #1 SMP PREEMPT Wed, 10 Jun 2020 20:36:24 +0000
+00:00:00.236234 DMI Product Name: K501UW
+00:00:00.236248 DMI Product Version: 1.0       
+00:00:00.236257 Firmware type: UEFI
+00:00:00.236550 Secure Boot: Disabled
+00:00:00.236653 Host RAM: 7824MB (7.6GB) total, 6643MB (6.4GB) available
+00:00:00.236661 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:00.236662 Process ID: 17134
+00:00:00.236662 Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.236736 Qt version: 5.15.0
+00:00:00.262851 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:00.780406 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: -1x20 x 1054x1057
+00:00:00.784693 GUI: UIMediumEnumerator: Medium-enumeration finished!
