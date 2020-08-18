@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+intern="eDP1"
+extern="HDMI1"
+
+case "$1" in
+  "disconnect") xrandr --output "$extern" --off --output "$intern" --auto ;;
+  "coding") xrandr --output "$extern" --set audio force-dvi --rotate left && xrandr --output "$intern" --auto --output "$extern" --left-of "$intern" ;;
+  "extra") xrandr --output "$extern" --set audio force-dvi --mode 1920x1080 && xrandr --output "$intern" --auto --output "$extern" --left-of "$intern";;
+  "larger") xrandr --output "$extern" --set audio force-dvi --mode 1920x1080 && xrandr --output "$intern" --auto --output "$extern" --same-as "$intern" ;;
+  *) notify-send "multimonitor script error"
+
+esac
