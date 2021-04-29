@@ -1,3 +1,6 @@
 plugged
-.config/transmission/
-.config/pulse/
+/.config/transmission/
+/.config/pulse/
+/.config/BraveSoftware
+/.config/VirtualBox
+/.config/libreoffice

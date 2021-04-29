@@ -1,6 +1,6 @@
 #other
 alias vpn='/opt/cisco/anyconnect/bin/vpn'
-alias vpnui='/opt/cisco/anyconnect/hin/vpnui'
+alias vpnui='/opt/cisco/anyconnect/bin/vpnui'
 alias open='xdg-open'
 alias r='ranger'
 alias fm='vifmrun'
@@ -28,6 +28,7 @@ alias srh='cd /srv/http'
 alias dw='cd ~/.dotfiles/suckless/dwm'
 
 #edit rc files
+alias vim='nvim'
 alias vrc='vim ~/.vimrc'
 alias brc='vim ~/.bashrc'
 alias bp='vim ~/.bash_profile'

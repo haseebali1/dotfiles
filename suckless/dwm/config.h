@@ -7,7 +7,7 @@ static const int swallowfloating    = 0;        /* 1 means swallow floating wind
 static const int showbar            = 1;        /* 0 means no bar */
 static const int rmaster            = 0;        /* 1 means master-area is initially on the right */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=10", "FontAwesome5FreeRegular:size=10", "FontAwesome5BrandsRegular:size=10", "FontAwesome5FreeSolid:size=10" };
+static const char *fonts[]          = { "monospace:size=12", "FontAwesome5FreeRegular:size=10", "FontAwesome5BrandsRegular:size=10", "FontAwesome5FreeSolid:size=10" };
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#21222C";
 static const char col_gray2[]       = "#21222C";
