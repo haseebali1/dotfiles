@@ -1,6 +1,21 @@
-plugged
+/.vim/plugged
 /.config/transmission/
 /.config/pulse/
 /.config/BraveSoftware
 /.config/VirtualBox
 /.config/libreoffice
+/.config/akonadi
+/.config/akonadi*
+/.config/akrgatorrc
+/.config/arkrc
+/.config/autostart
+/.config/autostart-scripts
+/.config/baloofile*
+/.config/bluedevil*
+/.config/chromium
+/.config/code-oss
+/.config/'Code - OSS'
+/.config/dconf
+
+
+
