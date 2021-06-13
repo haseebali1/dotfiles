@@ -96,7 +96,8 @@
 /.config/yay
 /.config/zathura
 /.config/zoomus.conf*
-
+/.config/cantorrc
+/.config/plasmawindow*
 
 
 
