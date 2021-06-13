@@ -124,11 +124,11 @@ XF86MonBrightnessUp
 
 # raise or lowere volume
 XF86Audio{Raise,Lower}Volume
-    pactl set-sink-volume 0 {+,-}5%; refbar
-    #pactl set-sink-volume 0 {+,-}5%
+    #pactl set-sink-volume 0 {+,-}5%; refbar
+    pactl set-sink-volume 0 {+,-}5% && pkill -RTMIN+10 dwmblocks
 
 # mute volume
 XF86AudioMute
-    pactl set-sink-mute 0 toggle; refbar
-    #pactl set-sink-mute 0 toggle
+    #pactl set-sink-mute 0 toggle; refbar
+    pactl set-sink-mute 0 toggle && pkill -RTMIN+10 dwmblocks
 
