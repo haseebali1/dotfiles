@@ -46,3 +46,17 @@ Configuration
 -------------
 The configuration of dwm is done by creating a custom config.h
 and (re)compiling the source code.
+
+
+Patches-applied in order
+------------------------
+attach aside and below
+hide vacant tags
+no title (manual intervention)
+only quit on empty
+per tag
+remove border
+status all mons
+swallow
+split status(manual intervention)
+
