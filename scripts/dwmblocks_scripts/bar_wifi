@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# Wifi
+printf " $(nmcli -t | grep " connected" | cut -c 22-)"

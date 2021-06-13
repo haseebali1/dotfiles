@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+#volume
+if [[ `pactl list sinks | grep Mute | grep y` ]];
+then
+    printf " $(pactl list sinks | grep '^[[:space:]]Volume:' | awk '{print $5}')";
+else
+    printf " $(pactl list sinks | grep '^[[:space:]]Volume:' | awk '{print $5}')";
+fi
+

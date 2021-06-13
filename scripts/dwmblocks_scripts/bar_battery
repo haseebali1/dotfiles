@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+#battery
+bat_status=$(cat /sys/class/power_supply/BAT0/status)
+
+if [ $bat_status = "Discharging" ]
+then
+    printf " $(cat /sys/class/power_supply/BAT0/capacity | sed 's/$/%%/')"
+else
+    printf " $(cat /sys/class/power_supply/BAT0/capacity | sed 's/$/%%/')"
+fi

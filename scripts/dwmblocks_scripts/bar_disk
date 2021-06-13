@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+#disk space
+printf " $(df -h | grep "/$" | awk '{print $3 " / " $2}')"

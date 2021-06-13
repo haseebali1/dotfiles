@@ -2,7 +2,7 @@
 # ~/.bash_profile
 #
 
-export PATH=$PATH:$HOME/.dotfiles/scripts/
+export PATH=$PATH:$HOME/.dotfiles/scripts/:$HOME/.dotfiles/scripts/dwmblocks_scripts
 
 export EDITOR="vim"
 export TERMINAL="st"

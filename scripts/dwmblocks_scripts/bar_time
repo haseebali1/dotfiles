@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+printf "$(date +" %I:%M %p")"
