@@ -167,3 +167,5 @@ highlight ColorColumn ctermbg=0 guibg=purple
 let mapleader = " "
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 
+"use system clipboard when yanking
+set clipboard=unnamedplus
