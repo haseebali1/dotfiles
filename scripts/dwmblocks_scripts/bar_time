@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-printf "$(date +" %I:%M %p")"
+#date and time.
+printf "$(date +" %a, %B %d   %I:%M %p")"
