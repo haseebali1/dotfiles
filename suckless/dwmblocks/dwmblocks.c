@@ -74,7 +74,7 @@ void getcmd(const Block *block, char *output)
 		//only chop off newline if one is present at the end
 		i = output[i-1] == '\n' ? i-1 : i;
         // hacky solution to not draw the delim after the bar_date script
-        if(block->signal != 50)
+        if(block->signal != 100)
 		    strncpy(output+i, delim, delimLen);
 	}
 	else
