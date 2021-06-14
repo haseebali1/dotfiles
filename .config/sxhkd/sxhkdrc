@@ -86,7 +86,7 @@ super + c
 
 # run dmenu
 super + d
-    dmenu_run
+    dmenu_run -hp chromium,firefox,st,brave
 
 # lock screen using lock script
 super + shift + e
