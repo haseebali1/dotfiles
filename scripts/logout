@@ -1,0 +1,14 @@
+#!/bin/sh
+
+extramonitor() {
+    case "$1" in
+      "logout") pkill dwm ;;
+      "reboot") systemctl reboot ;;
+      "poweroff") systemctl poweroff ;;
+      *) notify-send "multimonitor script error"
+
+    esac
+}
+
+selection=$(printf "logout\nreboot\npoweroff\n" | dmenu -p "Logout : ")
+extramonitor "$selection"
