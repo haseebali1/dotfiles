@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 #disk space
-printf " $(df -h | grep "/$" | awk '{print $3}')"
+printf " $(df -h | grep "/home$" | awk '{print $3}')"
