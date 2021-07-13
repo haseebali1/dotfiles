@@ -1,4 +1,4 @@
-#other
+﻿# other
 alias vpn='/opt/cisco/anyconnect/bin/vpn'
 alias vpnui='/opt/cisco/anyconnect/bin/vpnui'
 alias open='xdg-open'
@@ -16,7 +16,7 @@ alias dph='cd ~/Documents/projects/html'
 alias dpp='cd ~/Documents/projects/python'
 alias dl='cd ~/Downloads'
 alias de='cd ~/Desktop'
-alias v='cd ~/Videos'
+alias V='cd ~/Videos'
 alias p='cd ~/Pictures'
 alias cnf='cd ~/.config'
 alias dtf='cd ~/.dotfiles'
@@ -28,7 +28,7 @@ alias srh='cd /srv/http'
 alias dw='cd ~/.dotfiles/suckless/dwm'
 
 #edit rc files
-alias vim='nvim'
+alias v='nvim'
 alias vrc='vim ~/.vimrc'
 alias brc='vim ~/.bashrc'
 alias bp='vim ~/.bash_profile'
@@ -82,7 +82,7 @@ alias mkdir='mkd'
 alias wion='nmcli radio wifi on'
 alias wiof='nmcli radio wifi off'
 alias wili='nmcli device wifi list'
-alias wico='nmcli device wifi connect'
+alias wico='nmcli device wifi connect -a'
 
 j() {
     name=$(pwd | rev | cut -d '/' -f 1 | rev)
