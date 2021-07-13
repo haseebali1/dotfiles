@@ -68,8 +68,8 @@
 #
 
 # open terminal (st)
-super + Return
-    $TERMINAL
+super + {_,shift +}Return
+    {$TERMINAL, exit_script}
 
 # automount script to mount usbs, unmount to unmount usbs
 super + {_,shift + }a
@@ -124,11 +124,11 @@ XF86MonBrightnessUp
 
 # raise or lowere volume
 XF86Audio{Raise,Lower}Volume
+    pactl set-sink-volume 0 {+,-}5%; pkill -RTMIN+10 dwmblocks
     #pactl set-sink-volume 0 {+,-}5%; refbar
-    pactl set-sink-volume 0 {+,-}5% && pkill -RTMIN+10 dwmblocks
 
 # mute volume
 XF86AudioMute
+    pactl set-sink-mute 0 toggle; pkill -RTMIN+10 dwmblocks
     #pactl set-sink-mute 0 toggle; refbar
-    pactl set-sink-mute 0 toggle && pkill -RTMIN+10 dwmblocks
 
