@@ -98,7 +98,7 @@
 /.config/zoomus.conf*
 /.config/cantorrc
 /.config/plasmawindow*
-
+/.config/systemd/*
 
 
 
