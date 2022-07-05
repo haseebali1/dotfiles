@@ -36,6 +36,9 @@ setxkbmap -option caps:swapescape &
 #bspwm changes cursor to x on some windows, keep it as pointer
 xsetroot -cursor_name left_ptr &
 
+#doom emacs
+/usr/bin/emacs --daemon
+
 #exec i3
 
 exec dwm
