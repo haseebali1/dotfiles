@@ -2,9 +2,9 @@
 # ~/.bash_profile
 #
 
-export PATH=$PATH:$HOME/.dotfiles/scripts/:$HOME/.dotfiles/scripts/dwmblocks_scripts
+export PATH=$PATH:$HOME/.dotfiles/scripts/:$HOME/.dotfiles/scripts/dwmblocks_scripts:$HOME/.emacs.d/bin
 
-export EDITOR="vim"
+export EDITOR="nvim"
 export TERMINAL="st"
 export BROWSER="firefox"
 export XDG_CONFIG_HOME="$HOME/.config"
