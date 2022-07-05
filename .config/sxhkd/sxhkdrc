@@ -88,6 +88,10 @@ super + c
 super + d
     dmenu_run -hp chromium,firefox,st,brave
 
+# doom emacs
+super + e
+    emacsclient -c -a 'vim'
+
 # lock screen using lock script
 super + shift + e
     lock
@@ -108,7 +112,6 @@ super + t
 
 super + {_,shift + }v
     {vlc,virtualbox}
-
 
 #
 # MEDIA KEYS
