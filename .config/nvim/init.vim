@@ -11,6 +11,8 @@ call plug#begin('~/.config/nvim/plugged')
 
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
+    Plug 'preservim/nerdtree'
+    Plug 'jiangmiao/auto-pairs'
     "Plug 'jmcantrell/vim-virtualenv'
     "Plug 'w0rp/ale'
     "Plug 'scrooloose/nerdtree'
@@ -36,6 +38,7 @@ call plug#begin('~/.config/nvim/plugged')
     "auto completion and lsp
     Plug 'neovim/nvim-lspconfig'
     Plug 'nvim-lua/completion-nvim'
+    "Plug 'kabouzeid/nvim-lspinstall'
     "Plug 'hrsh7th/nvim-compe'
 
 call plug#end()
@@ -44,11 +47,16 @@ lua require'lspconfig'.clangd.setup{on_attach=require'completion'.on_attach}
 lua require'lspconfig'.cssls.setup{on_attach=require'completion'.on_attach}
 lua require'lspconfig'.html.setup{on_attach=require'completion'.on_attach}
 lua require'lspconfig'.pyright.setup{on_attach=require'completion'.on_attach}
+lua require'lspconfig'.texlab.setup{on_attach=require'completion'.on_attach}
 lua require'lspconfig'.tsserver.setup{on_attach=require'completion'.on_attach}
 
 " autocomplete searching
 set completeopt=menuone,noinsert,noselect
 let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy']
+
+" Use <Tab> and <S-Tab> to navigate through popup menu
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 filetype plugin on
 
@@ -122,7 +130,8 @@ set cursorline
 "auto indent next line with same indentation
 "set autoindent
 
-set smartindent
+"set smartindent
+set cindent
 
 "no viminfo file
 set viminfo=
@@ -155,6 +164,9 @@ set path+=**
 " list all files in buffer
 map <F5> :ls<CR>
 
+" allow changing buffers with unsaved work
+set hidden
+
 "Display all matching files
 set wildmenu
 
@@ -165,7 +177,18 @@ highlight ColorColumn ctermbg=0 guibg=purple
 :imap n~ ñ
 
 let mapleader = " "
+
+" open Telescope to find files
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
+
+" nerdtree
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
+" auto-pairs
+let g:AutoPairsFlyMode = 1
 
 "use system clipboard when yanking
 set clipboard=unnamedplus
