@@ -86,7 +86,7 @@ super + c
 
 # run dmenu
 super + d
-    dmenu_run -hp chromium,firefox,st,brave
+    dmenu_run -c -l 12 -hp chromium,firefox,st,brave,google-chrome-stable
 
 # doom emacs
 super + e
