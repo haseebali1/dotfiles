@@ -33,3 +33,6 @@ vim.api.nvim_set_keymap('', '<F5>', ':ls<CR>', { noremap=true, silent=true })
 -- move line(s) of code up or down
 vim.api.nvim_set_keymap('x', 'K', ":move '<-2<CR>gv=gv", {})
 vim.api.nvim_set_keymap('x', 'J', ":move '>+1<CR>gv=gv", {})
+
+--yank full path of current file
+vim.api.nvim_set_keymap('', '<leader>p', ':let @+=expand("%:p")<CR>', { silent=true })
