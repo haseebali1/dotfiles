@@ -15,5 +15,5 @@ extramonitor() {
     esac
 }
 
-selection=$(printf "disconnect\nextra\ncoding\nlarger" | dmenu -p "Monitor Configuration")
+selection=$(printf "disconnect\nextra\ncoding\nlarger\nmovie" | dmenu -p "Monitor Configuration")
 extramonitor "$selection"
