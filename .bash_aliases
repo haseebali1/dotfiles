@@ -45,13 +45,13 @@ alias frc='vim ~/.config/vifm/vifmrc'
 alias ga='git add'
 alias gc='git commit -m'
 alias gs='git status'
-alias gp='git push origin master'
+alias gp='git push'
 alias gi='git init'
 
 g() {
     git add .;
     git commit -m "$@";
-    git push origin master;
+    git push origin main;
 }
 
 alias g='g'
