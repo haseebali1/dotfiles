@@ -88,13 +88,8 @@ super + c
 super + d
     dmenu_run -c -l 12 -hp chromium,firefox,st,brave,google-chrome-stable
 
-# doom emacs
-super + e
-    emacsclient -c -a 'vim'
-
-# lock screen using lock script
-super + shift + e
-    lock
+super +{_, shift +, ctrl + }e
+    {emacsclient -c -a 'vim', lock, setescape}
 
 super + g
     chromium
@@ -127,11 +122,13 @@ XF86MonBrightnessUp
 
 # raise or lowere volume
 XF86Audio{Raise,Lower}Volume
-    pactl set-sink-volume 0 {+,-}5%; pkill -RTMIN+10 dwmblocks
+    {volume_up, volume_down}
+    #pactl set-sink-volume 26 {+,-}5%; pkill -RTMIN+10 dwmblocks
     #pactl set-sink-volume 0 {+,-}5%; refbar
 
 # mute volume
 XF86AudioMute
-    pactl set-sink-mute 0 toggle; pkill -RTMIN+10 dwmblocks
+    volume_mute
+    #pactl set-sink-mute 26 toggle; pkill -RTMIN+10 dwmblocks
     #pactl set-sink-mute 0 toggle; refbar
 
