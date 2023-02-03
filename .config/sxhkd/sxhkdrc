@@ -77,8 +77,8 @@ super + {_,shift + }a
 
 # open firefox, firefox private instance and move it to workspace 3, need sleep
 # to delay the moving of the window otherwise moves already open window
-super + {_,shift + }b
-    {$BROWSER, $BROWSER -private-window && sleep .5 && bspc node -d ^3}
+super + {_,shift +, ctrl + }b
+    {$BROWSER, $BROWSER -private-window && sleep .5 && bspc node -d ^3, change_background}
 
 # edit config files
 super + c
