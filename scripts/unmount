@@ -5,12 +5,14 @@
 #directories to be ignored by the script to unmount like home, root or boot
 excludes="\(/boot\|/home\|/\|/boot/efi\)$"
 
-tounmount=$(lsblk -lp | grep "t /" | grep -v $excludes | awk '{print $1 " ( " $4 " ) on " $7}' | dmenu -c -l 12 -hp "Which drive to unmount: " | awk '{print $1}')
+tounmount=$(lsblk -lp | grep "t /" | grep -v $excludes | awk '{print $1 " ( " $4 " ) on " $7}' | dmenu -c -l 12 -p "Which drive to unmount: " | awk '{print $1}')
 
 if [ -z "$tounmount" ];
 then
     exit 0
 else
-    sudo umount "$tounmount"
+    password=$(dmenu -P -c -l 1 -p "Password")
+    echo "$password" | sudo -S umount "$tounmount"
+    sudo -K
     exit 0
 fi
