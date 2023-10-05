@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
+pkill feh
+
 feh --randomize --bg-scale --no-fehbg $HOME/Pictures/wallpapers/* &
 
