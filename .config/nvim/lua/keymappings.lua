@@ -25,7 +25,7 @@ vim.api.nvim_set_keymap('i', '<expr><TAB>', 'pumvisible() ? \"\\<C-n>\" : \"\\<T
 vim.api.nvim_set_keymap('i', '<expr><S-TAB>', 'pumvisible() ? \"\\<C-p>\" : \"\\<S-TAB>\"', { noremap=true, silent=true })
 
 -- toggle spell check
-vim.api.nvim_set_keymap('', '<F6>', ':setlocal spell! spelllang=en_us<CR>', { noremap=true, silent=true })
+vim.api.nvim_set_keymap('', '<F6>', ':setlocal spell! spelllang=en_us linebreak!<CR>', { noremap=true, silent=true })
 
 -- toggle buffer
 vim.api.nvim_set_keymap('', '<F5>', ':ls<CR>', { noremap=true, silent=true })
@@ -36,3 +36,10 @@ vim.api.nvim_set_keymap('x', 'J', ":move '>+1<CR>gv=gv", {})
 
 --yank full path of current file
 vim.api.nvim_set_keymap('', '<leader>p', ':let @+=expand("%:p")<CR>', { silent=true })
+
+vim.api.nvim_set_keymap('n', 'j', 'gj', { silent=true })
+vim.api.nvim_set_keymap('n', 'k', 'gk', { silent=true })
+
+--surround with text
+vim.api.nvim_set_keymap('', '<leader>j', ':%s/\\(.*\\)/input += "\\1\\\\n";<CR>Vggy', { silent=true })
+
