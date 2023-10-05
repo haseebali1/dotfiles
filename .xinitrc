@@ -37,7 +37,7 @@ setxkbmap -option caps:swapescape &
 xsetroot -cursor_name left_ptr &
 
 #doom emacs
-/usr/bin/emacs --daemon
+#/usr/bin/emacs --daemon
 
 #exec i3
 
