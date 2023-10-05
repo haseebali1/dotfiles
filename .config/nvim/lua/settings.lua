@@ -14,7 +14,7 @@ vim.o.autoindent=true                           -- keep same indent
 vim.o.viminfo=""
 vim.o.backup=false
 vim.o.writebackup=false
-vim.o.scrolloff=10                              -- keep cursor 10 lines from bottom
+vim.o.scrolloff=15                              -- keep cursor 15 lines from bottom
 -- change default splitting behavior
 vim.o.splitbelow=true                           -- split screen below
 vim.o.splitright=true                           -- split screen right
