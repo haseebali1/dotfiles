@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 #volume
-if [[ `pactl list sinks | grep Mute | grep y` ]];
+if [[ `awk -F"[][]" '/Left:/ { print $4 }' <(amixer sget Master) | grep "off"` ]];
 then
-    printf " $(pactl list sinks | grep '^[[:space:]]Volume:' | awk '{print $5}')";
+    printf " $(awk -F"[][]" '/Left:/ { print $2 }' <(amixer sget Master))";
 else
-    printf " $(pactl list sinks | grep '^[[:space:]]Volume:' | awk '{print $5}')";
+    printf " $(awk -F"[][]" '/Left:/ { print $2 }' <(amixer sget Master))";
 fi
 
