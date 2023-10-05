@@ -95,8 +95,8 @@ super + g
     chromium
 
 # open minecraft
-super + m
-    multimonitor
+super + {_, shift +}m
+    {multimc, multimonitor}
 
 super + q
     transmission-gtk
@@ -104,6 +104,9 @@ super + q
 # open tor browser
 super + t
     tor-browser
+
+super + u
+    kcalc
 
 super + {_,shift + }v
     {vlc,virtualbox}
@@ -122,13 +125,17 @@ XF86MonBrightnessUp
 
 # raise or lowere volume
 XF86Audio{Raise,Lower}Volume
-    {volume_up, volume_down}
+    amixer -q sset Master 5%{+,-}; pkill -RTMIN+10 dwmblocks
+    #{volume_up, volume_down}
     #pactl set-sink-volume 26 {+,-}5%; pkill -RTMIN+10 dwmblocks
-    #pactl set-sink-volume 0 {+,-}5%; refbar
 
 # mute volume
 XF86AudioMute
-    volume_mute
+    amixer -q sset Master toggle; pkill -RTMIN+10 dwmblocks
+    #volume_mute
     #pactl set-sink-mute 26 toggle; pkill -RTMIN+10 dwmblocks
-    #pactl set-sink-mute 0 toggle; refbar
+
+{_, shift +} Print
+  {scrot -i -s -e 'xclip -selection clipboard -t image/png -i $f && mv $f ~/Pictures/screenshots', scrot -i -e 'xclip -selection clipboard -t image/png -i $f && mv $f ~/Pictures/screenshots'}
+
 
