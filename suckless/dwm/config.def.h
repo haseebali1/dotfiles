@@ -30,11 +30,12 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class     instance  title           tags mask  isfloating  isterminal  noswallow  monitor */
-	{ "firefox",                    NULL,       NULL,       1<<0,            0, 0, 0,          -1 },
+	{ "firefox",                    NULL,       NULL,       1<<3,            0, 0, 0,          -1 },
 	{ "st-256color",                NULL,       NULL,       1<<1,            0, 1, 0,          -1 },
 	{ "Tor Browser",                NULL,       NULL,       1<<3,            0, 0, 0,          -1 },
 	{ "Vlc",                        NULL,       NULL,       1<<4,            0, 0, 0,          -1 },
 	{ "Gimp",                       NULL,       NULL,       1<<5,            0, 0, 0,          -1 },
+	{ "MultiMC",                    NULL,       NULL,       1<<5,            0, 0, 0,          -1 },
 	{ "VirtualBox Manager",         NULL,       NULL,       1<<5,            0, 0, 0,          -1 },
 	{ "Zathura",                    NULL,       NULL,       1<<5,            0, 0, 0,          -1 },
 	{ "feh",                        NULL,       NULL,       1<<6,            0, 0, 0,          -1 },
