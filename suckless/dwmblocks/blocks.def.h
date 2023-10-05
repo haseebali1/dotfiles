@@ -7,7 +7,7 @@ static const Block blocks[] = {
 	{"", "bar_ram",					    60,		1},
 	{"", "bar_disk",					0,		2},
 	{"", "bar_wifi",					60,		3},
-	{"", "bar_battery",					0,		4},
+	{"", "bar_battery",					600,		4},
 };
 
 //sets delimeter between status commands. NULL character ('\0') means no delimeter.
