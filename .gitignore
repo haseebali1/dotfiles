@@ -101,6 +101,47 @@
 /.config/systemd/*
 
 
+./.config/.kdeglobals
+./.config/GNS3/
+./.config/JetBrains/
+./.config/LanguageTool/
+./.config/MultiMCrc
+./.config/Postman/
+./.config/breezerc
+./.config/cef_user_data/
+./.config/firebase/
+./.config/htop/
+./.config/kanagramrc
+./.config/kbackuprc
+./.config/kblackboxrc
+./.config/kblocksrc
+./.config/kbouncerc
+./.config/kbruchrc
+./.config/kfontinstuirc
+./.config/kgammarc
+./.config/kgoldrunnerrc
+./.config/khelpcenterrc
+./.config/klicketyrc
+./.config/kolfrc
+./.config/kollisionrc
+./.config/konsolesshconfig
+./.config/kpatrc
+./.config/ksystemlogrc
+./.config/kturtlerc
+./.config/kubrickrc
+./.config/lskatrc
+./.config/neofetch/
+./.config/obs-studio/
+./.config/palapelirc
+./.config/picmi/
+./.config/picmirc
+./.config/plasma-welcomerc
+./.config/print-manager
+./.config/zoom.conf
+./.config/skanliterc
+./.config/user-dirs.dirs
+./.config/user-dirs.locale
+
 
 
 
